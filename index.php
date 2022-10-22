@@ -4,7 +4,8 @@ declare(strict_types = 1);
 
 require_once realpath('vendor/autoload.php');
 
-
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/.gitignore');
+$dotenv->load();
 
 set_exception_handler(function(\Throwable $e){
     
@@ -26,7 +27,14 @@ $router->get('/',[Controller::class,'index'])
         ->get('/anime',[Controller::class,'anime'])
         ->get('/portfolio',[Controller::class,'portfolio']);
 
-echo $router->resolve();
+
+$dbh = new PDO('mysql:dbname='.$_ENV['DB_DATABASE'].';host='.$_ENV['DB_HOST'], $_ENV['DB_USER'], $_ENV['DB_PASS'],$defaultOptions);
+$stmt = $dbh->prepare('SELECT * FROM `op-manga-chapters`');
+$stmt->execute();
+echo '<pre>';
+print_r($stmt->fetchAll());
+
+//echo $router->resolve();
 
 
 
