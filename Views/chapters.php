@@ -9,7 +9,7 @@
         <div class="article-body">
 
              <div class="article-title">
-                 <?=$d['title']?>
+             Chapter <?=$d['chapter'].': '.$d['title']?>
              </div>
 
             <div class="article-text">

@@ -12,7 +12,7 @@ class Controller
     }
     public function chapters()
     {
-        $stmt = DB::db()->prepare('SELECT * FROM `op-manga-chapters`');
+        $stmt = DB::db()->prepare('SELECT * FROM `op-manga-chapters` ORDER BY `chapter` DESC');
         $stmt->execute();
         return View::make('chapters',$stmt->fetchAll());
     }
