@@ -4,8 +4,8 @@ declare(strict_types = 1);
 
 require_once realpath('vendor/autoload.php');
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+// $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+// $dotenv->load();
 
 set_exception_handler(function(\Throwable $e){
     
@@ -33,7 +33,7 @@ $stmt = $dbh->prepare('SELECT * FROM `op-manga-chapters`');
 $stmt->execute();
 echo '<pre>';
 print_r($stmt->fetchAll());
-
+echo '</pre>';
 //echo $router->resolve();
 
 
