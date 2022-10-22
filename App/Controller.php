@@ -12,7 +12,9 @@ class Controller
     }
     public function chapters()
     {
-        return View::make('chapters');
+        $stmt = DB::db()->prepare('SELECT * FROM `op-manga-chapters`');
+        $stmt->execute();
+        return View::make('chapters',$stmt->fetchAll());
     }
     public function anime()
     {

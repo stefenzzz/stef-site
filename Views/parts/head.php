@@ -40,10 +40,10 @@
                         <!-- nav -->
                         <nav>
                             <ul class="flex">
-                                <li><a href="<?='\\'?>" class="active link">Home</a></li>
-                                <li><a href="<?='\\chapters'?>">Chapters</a></li>
-                                <li><a href="<?='\\anime'?>">Anime</a></li>
-                                <li><a href="<?='\\portfolio'?>">Portfolio</a></li>
+                                <li><a href="<?='\\'?>" class="<?=($_SERVER['REQUEST_URI'] === '/') ? 'active link': '';?>">Home</a></li>
+                                <li><a href="<?='\\chapters'?>" class="<?=($_SERVER['REQUEST_URI'] === '/chapters') ? 'active link': '';?>">Chapters</a></li>
+                                <li><a href="<?='\\anime'?>" class="<?=($_SERVER['REQUEST_URI'] === '/anime') ? 'active link': '';?>">Anime</a></li>
+                                <li><a href="<?='\\portfolio'?>" class="<?=($_SERVER['REQUEST_URI'] === '/portfolio') ? 'active link': '';?>">Portfolio</a></li>
                             </ul>
                         </nav>
             

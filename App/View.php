@@ -20,6 +20,7 @@ class View
         $viewPath = 'Views/'.$this->view.'.php';
 
         // extract($this->params);
+        $data = $this->params;
 
         if(!file_exists($viewPath))
         {
