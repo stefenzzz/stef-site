@@ -1,0 +1,55 @@
+.carousel-container{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 1;
+}
+.carousel{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.carousel-content{
+
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-transform: uppercase;
+}
+.carousel-content{
+    display: block;
+}
+.carousel-content em{
+    
+    display: block;
+    font-size:35px;
+    font-family: 'Righteous';
+    background: linear-gradient(to bottom,#A10100, #DA1F05,#F33C04,#FE650D,#FFC11F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.carousel-1{
+    left:0;
+}
+.carousel-2{
+    left:100%;
+}
+.carousel-3{
+    left:200%;
+}
+.carousel-4{
+    left:300%;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

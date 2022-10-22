@@ -1,0 +1,77 @@
+.calendar{
+    width: 100%;
+    margin-top:30px;
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    color:#4a4a4a;
+}
+.calendar .header{
+    background-color: #e6e6e6;
+
+}
+.calendar .header i{
+    align-self: center;
+    cursor: pointer;
+    padding:0 10px;
+}
+
+.calendar .date{
+    font-family:'Lato';
+    text-align: center;
+    flex-grow:1;
+    padding:10px 0;
+}
+.calendar .date h1{
+    font-size:16px;
+    font-weight: 100;
+}
+.calendar .date span{
+    font-size:14px;
+}
+
+.calendar .body{
+    font-family: 'Roboto';
+    width: 100%;
+    font-size:14px;
+
+}
+.calendar .weekdays{
+    width:100%;
+}
+.calendar .weekdays div{
+    width:calc(100%/7);
+    text-align: center;
+    padding:5px 0;
+    margin:5px 0;
+}
+.calendar .days{
+    width: 100%;
+    flex-wrap: wrap;
+}
+.calendar .days .day{
+    width:calc(100%/7);
+    text-align: center;
+    margin:5px 0;
+    padding:5px 0;
+}
+.prev{
+    color:rgba(0,0,0,.3)
+}
+.current-day{
+    background-color: rgba(0,0,0,.2);
+
+}
+@media (max-width:768px)
+{
+    
+    .calendar .body{
+        font-size:12px;
+    }
+    .calendar .weekdays div,
+    .calendar .days .day{
+        margin:0;
+    }
+    .calendar .date span{
+        font-size:12px;
+    }
+    
+}
