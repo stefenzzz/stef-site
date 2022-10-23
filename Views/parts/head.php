@@ -30,9 +30,9 @@
                         <div class="carousel-container">
                         
                             <div class="carousel">
-                                <h1 class="carousel-content carousel-1"><a href="/"><em>one piece chapter 1052 been release</em></a></h1>
-                                <h1 class="carousel-content carousel-2"><a href="/"><em>spy x family latest updates</em></a></h1>
-                                <h1 class="carousel-content carousel-3"><a href="/"><em>New anime release</em></a></h1>
+                                <h1 class="carousel-content carousel-1"><a href="/chapter/1064"><em>one piece chapter 1064 been release</em></a></h1>
+                                <h1 class="carousel-content carousel-2"><a href="/chapters"><em>spy x family latest updates</em></a></h1>
+                                <h1 class="carousel-content carousel-3"><a href="/chapters"><em>New anime release</em></a></h1>
                             </div>
                         </div>
                 </div>

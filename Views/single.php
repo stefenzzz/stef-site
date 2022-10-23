@@ -8,7 +8,7 @@
     </div>
 
 
-    <a href="/chapter/<?=$data['chapter']?>"><img class="single-chapter-image" src="/<?=$data['img']?>" alt="<?=$data['title']?>"></a>
+    <img class="single-chapter-image" src="/<?=$data['img']?>" alt="<?=$data['title']?>">
 
         <div class="article-body">
 
@@ -16,7 +16,7 @@
                 <?=$data['text']?>
             </div>
             <div class="article-date">
-                <?=$data['date']?>
+             <?=date('M j, Y h:i A',strtotime($data['date']))?>
             </div>
         </div>
        

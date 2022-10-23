@@ -7,19 +7,31 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 
+use App\Router;
+use App\Controller;
+use App\DB;
+use App\RouteNotFound;
+use App\View;
+
 set_exception_handler(function(\Throwable $e){
     
-    echo $e->getMessage().'<br>';
-    echo $e->getFile().'<br>';
-    echo 'Line '.$e->getLine().'<br>';
+    if($e instanceof RouteNotFound)
+    {   
+        // header('HTTP/1.1 404 Not Found');
+        http_response_code(404);
+        echo View::make('404');
+ 
+    }else{
+        echo $e->getMessage().'<br>';
+        echo $e->getFile().'<br>';
+        echo 'Line '.$e->getLine().'<br>';
+    }
 
 
 });
 
 
-use App\Router;
-use App\Controller;
-use App\DB;
+
 $router = new Router($_SERVER['REQUEST_METHOD'],$_SERVER['REQUEST_URI']);
 
 

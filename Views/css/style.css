@@ -238,10 +238,66 @@ article img{
 }
 .single-article .article-title a{
    font-size:20px;
+   color:#fff;
+   background-color: var(--primary-color);
+    font-weight: bold;
+    padding:5px 10px;
+    text-transform: uppercase;
 }
 .single-article .article-title{
     margin-top:0;
 }
+/* Anime Page
+ ----------------------------------------------- */
+ .anime-page.flex{
+    justify-content: unset;
+ }
+ .anime-page img{
+    width:200px;
+ }
+ .anime-title{
+    text-align: center;
+   
+ }
+ .anime-title a{
+    font-size:18px;
+ }
+ .anime-title a:hover{
+    color:var(--primary-color);
+ }
+ /* Portfolio
+ ----------------------------------------------- */
+.portfolio.flex{
+    justify-content: unset;
+}
+
+.portfolio img{
+    width:200px;
+    border:1px solid #d3d3d3;
+    padding:10px;
+}
+.portfolio .author-info{
+    margin-left: 20px;
+}
+.portfolio a{
+    color:var(--primary-color);
+}
+.portfolio p{
+    margin:5px 0;
+    color:#333;
+}
+/* 404
+----------------------------------- */
+
+.not-found{
+    
+    text-align: center;
+    font-size:70px;
+    text-transform: uppercase;
+    height: 100%;
+    color:rgba(0,0,0,.5);
+}
+
 
 /* secondary widgets
 ----------------------------------- */
@@ -260,6 +316,9 @@ article img{
     color:#4a4a4a;
 
 
+}
+.secondary-widget ul a:hover{
+    color:var(--primary-color);
 }
 
 /* footer
@@ -388,13 +447,18 @@ article img{
         flex-direction:column;
     }
     .article-chapter-image{
-        width: 100%;
+        width: 300px;
     }
-}
+    .single-article .article-title a{
+        font-size:15px
+    }
 @media (max-width:500px) {
     header.site-header .header-left-column{
         justify-self: unset;
         
+    }
+    .single-article .article-title a{
+        font-size:12px
     }
 }
 @media (max-width:385px) {

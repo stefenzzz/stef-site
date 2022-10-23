@@ -9,10 +9,10 @@
 <!-- Recent Updates -->
 <ul>
     <li class="widget-title">Recent Updates</li>
-    <li><a href="">Onepiece Chapter 1052</a></li>
-    <li><a href="">Onepiece Chapter 1051</a></li>
-    <li><a href="">Spy X Family episode 10</a></li>
-    <li><a href="">Onepiece Chapter 1052</a></li>
+    <li><a href="/chapter/1064">Onepiece Chapter 1064</a></li>
+    <li><a href="/chapter/1063">Onepiece Chapter 1063</a></li>
+    <li><a href="/chapter/1062">Onepiece Chapter 1062</a></li>
+    <li><a href="/chapter/1061">Onepiece Chapter 1061</a></li>
    
 </ul>
 

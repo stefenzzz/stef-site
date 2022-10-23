@@ -44,7 +44,7 @@ class Router
                 }
             }
         }
-        throw new \Exception('404 not found');
+        throw new RouteNotFound();
     }
     public function routes()
     {

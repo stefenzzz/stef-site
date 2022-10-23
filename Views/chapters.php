@@ -16,7 +16,7 @@
                 <?=$d['text']?>
             </div>
             <div class="article-date">
-                <?=$d['date']?>
+                <?=date('M j, Y h:i A',strtotime($d['date']))?>
             </div>
         </div>
        
