@@ -6,22 +6,33 @@ namespace App;
 
 class Controller
 {
+
     public function index()
     {
         return View::make('index');
     }
-    public function chapters()
+    public function chapters($params = [])
     {
-        $stmt = DB::db()->prepare('SELECT * FROM `op-manga-chapters` ORDER BY `chapter` DESC');
-        $stmt->execute();
-        return View::make('chapters',$stmt->fetchAll());
+       
+
+
+     
+        return View::make('chapters',$params);
     }
     public function anime()
-    {
+    {   
+       
         return View::make('anime');
     }
     public function portfolio()
     {
         return View::make('portfolio');
     }
+    public function single($params = [])
+    {
+        
+        return View::make('single',$params); 
+    }
+
+
 }

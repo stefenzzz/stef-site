@@ -22,12 +22,12 @@ use App\Controller;
 use App\DB;
 $router = new Router($_SERVER['REQUEST_METHOD'],$_SERVER['REQUEST_URI']);
 
+
 $router->get('/',[Controller::class,'index'])
         ->get('/chapters',[Controller::class,'chapters'])
         ->get('/anime',[Controller::class,'anime'])
         ->get('/portfolio',[Controller::class,'portfolio']);
 
-   
 
 
 (new DB([
@@ -36,7 +36,10 @@ $router->get('/',[Controller::class,'index'])
     'database' => $_ENV['DB_DATABASE'],
     'user' => $_ENV['DB_USER'],
     'password' => $_ENV['DB_PASS']
-]));
+],$router));
+
+
+
 
 
 echo $router->resolve();

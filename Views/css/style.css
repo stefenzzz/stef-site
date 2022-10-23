@@ -198,9 +198,13 @@ article img{
    
 }
 .article-title{
+   
+    margin-bottom:10px;
+   
+}
+.article-title a{
     color:var(--primary-color);
     font-size:18px;
-    margin-bottom:10px;
     font-weight: bold;
 }
 .article-text{
@@ -223,9 +227,21 @@ article img{
     align-items: flex-start;
 }
 
+/* Single article page
+--------------------------------------------------- */
 
-
-
+.single-chapter-image{
+    width:100%;
+}
+.single-article div{
+    margin:20px 0;
+}
+.single-article .article-title a{
+   font-size:20px;
+}
+.single-article .article-title{
+    margin-top:0;
+}
 
 /* secondary widgets
 ----------------------------------- */

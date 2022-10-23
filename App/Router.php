@@ -22,6 +22,7 @@ class Router
     {
         return $this->register('get', $route,$action);
     }
+
     public function post(string $route,array $action)
     {
         return $this->register('post', $route,$action);
@@ -33,15 +34,25 @@ class Router
         
         if(is_array($action))
         {
+      
             [$class,$method] = $action;
             if(class_exists($class))
             {
                 if(method_exists($class,$method))
                 {
-                    return call_user_func_array([new $class,$method],[]);
+                    return call_user_func_array([new $class,$method],[$action['2'] ?? null]);
                 }
             }
         }
         throw new \Exception('404 not found');
     }
+    public function routes()
+    {
+        return $this->routes;
+    }
+    public function addRouteData(string $method,string $route,array $data =[])
+    {
+        array_push($this->routes[$method][$route],$data);
+    }
+   
 }

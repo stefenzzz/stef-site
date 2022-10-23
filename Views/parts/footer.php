@@ -11,7 +11,7 @@
 
 </div><!-- site-container end-->
 
-<script src="Views/js/calendar.js"></script>       
-<script src="Views/js/carousel.js"></script>
+<script src="/Views/js/calendar.js"></script>       
+<script src="/Views/js/carousel.js"></script>
 </body>
 </html>
